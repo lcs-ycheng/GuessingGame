@@ -47,6 +47,7 @@ Guess it!</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="messageToUser" destination="YG7-a9-VZp" id="01E-du-Kru"/>
                         <outlet property="numberGuessed" destination="30C-jN-W4g" id="e9A-K8-Zy8"/>
                     </connections>
                 </viewController>

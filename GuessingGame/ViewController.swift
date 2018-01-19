@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     //MARK: outlets
     @IBOutlet weak var numberGuessed: UITextField!
+    @IBOutlet weak var messageToUser: UILabel!
     
     //MARK: Properties (variables)
     var game = GuessingGame()
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         print("The number to guess is:")
         print(game.numberToGuess)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,13 +44,17 @@ class ViewController: UIViewController {
         }
         //print the number that was guessed again
         print(integerGiven)
-    
-    //The number to guess is
-    print("The number to guess is:")
-    print(game.numberToGuess)
+        
+        //The number to guess is
+        print("The number to guess is:")
+        print(game.numberToGuess)
+        
+        // Send guess to model then display feedback
+        messageToUser.text = game.checkGuessGiveFeedback(guess: integerGiven)
+        
         
     }
     //MARK: Custom function(s)
-
+    
 }
 
