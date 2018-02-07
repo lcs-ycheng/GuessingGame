@@ -49,7 +49,7 @@ Guess it!</string>
                         <constraints>
                             <constraint firstItem="YG7-a9-VZp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bK1-AS-cqg"/>
                             <constraint firstItem="Rpb-yp-aX6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eO3-6B-5QP"/>
-                            <constraint firstItem="Rpb-yp-aX6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="m9V-xx-xdY"/>
+                            <constraint firstItem="Rpb-yp-aX6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="12" id="m9V-xx-xdY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
